@@ -8,6 +8,7 @@
     "browser-sync": "browser-sync start --server --files index.html styles.css",
     "lint-scss": "stylelint styles.scss ./**/*.scss",
     "sass": "sass styles.scss styles.css",
+    "lint": "eslint ./**/*.js",
     "sass-watch": "sass --watch styles.scss:styles.css styles:styles",
     "dev": "concurrently npm:sass-watch npm:browser-sync"
   },
