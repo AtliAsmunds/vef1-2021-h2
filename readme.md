@@ -1,3 +1,23 @@
+# Planið
+
+## Hvað þarf að gera
+* Ákveða útlit og media query með SCSS
+* Ákveða HTML uppsetningu
+* Javascript:
+  * Sækja gögn og setja í localStorage og uppfæra gögnin
+  * Smíða og fylla út valstiku
+  * Smíða og fylla út verkefnalista
+  * Breyta verkefnalista út frá vali í valstiku
+  * Smíða og birta form fyrir nýtt/breytingu á verkefni
+  * Breyta verkefnalista ef birta þarf nýtt verkefni
+  * Raða verkefnalista í samræmi við röðunarvalkost
+  * Takkar sem þarf að tengja
+    * Valkostir í valstiku
+    * Nýtt verkefni
+    * Röðun verkefna
+    * Ljúka verkefni
+    * Breyta verkefni
+
 # Vefforritun 1, 2021: Hópverkefni 2
 
 [Kynning í fyrirlestri](https://youtu.be/Alsi_j6skHY)
