@@ -1,0 +1,131 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="formynd.css">
+  <title>Verkefnalistinn</title>
+</head>
+<body>
+  <!-- <header>
+    <h1>Verkefnalistinn</h1>
+  </header> -->
+  <main>
+    <div class="titill"><h1>Verkefnalistinn</h1></div>
+    <div class="valstika">
+      <div>
+        <ul>
+          <li>
+            <div>Verkefni</div>
+            <div>37</div>
+          </li>
+          <li>
+            <div>Kláruð verkefni</div>
+            <div>37</div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Flokkar</h2>
+        <ul>
+          <li>
+            <div>Vefforrit</div>
+            <div>3</div>
+          </li>
+          <li>
+            <div>Skipulag</div>
+            <div>6</div>
+          </li>
+          <li>
+            <div>Vefþjónustur</div>
+            <div>9</div>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tags</h2>
+        <ul>
+          <li>
+            <div>Vefforrit</div>
+            <div>10</div>
+          </li>
+          <li>
+            <div>Skipulag</div>
+            <div>10</div>
+          </li>
+          <li>
+            <div>Vefþjónustur</div>
+            <div>10</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="verkefnin">
+      <div>
+        Raða eftir: 
+        <select>
+          <option>Dagsetningu</option>
+          <option>Titli</option>
+          <option>Forgangi</option>
+        </select>
+      </div>
+      <ul>
+        <li class="verkefni">
+          <div>Titill á fyrsta verkefni</div>
+          <div class="verkefnisinfo">
+            <div>10 nóv.</div>
+            <div>Tags</div>
+            <div>Flokkur</div>
+          </div>
+        </li>
+        <li class="verkefni">
+          <div>Titill á miðju verkefni</div>
+          <div>Lýsing á verkefni</div>
+          <div class="verkefnisinfo">
+            <div>10 nóv.</div>
+            <div>Tags</div>
+            <div>Flokkur</div>
+          </div>
+        </li>
+        <li class="verkefni">
+          <div>Titill á síðasta verkefni</div>
+          <div>Lýsing á verkefni</div>
+          <div class="verkefnisinfo">
+            <div>10 nóv.</div>
+            <div>Tags</div>
+            <div>Flokkur</div>
+          </div>
+        </li>
+      </ul>      
+      <div class="baetavidverkefni">
+        + Bæta við verkefni
+      </div>
+      <div class="smidaverkefni">
+        Form til þess að búa til nýtt verkefni
+        <form action="">
+          <div>
+            <label for="titill">Titill:</label>
+            <input
+            type="text"
+            name="titill"
+            id="titill"
+            placeholder="Titill á verkefni"
+            >
+          </div>
+          <div>
+            <label for="lysing">Lýsing:</label>
+            <textarea name="lysing" id="lysing" cols="30" rows="4" placeholder="Lýsing á verkefni"></textarea>
+          </div>     
+          <div>
+            <label for="due">Lokadagsetning:</label>
+            <input type="date" id="due" name="due"
+                  value="2021-11-16"
+                  min="2021-11-16" max="2022-11-16">
+          </div>
+          <div>
+            Val á tags og flokk
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
