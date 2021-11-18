@@ -1,6 +1,17 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 ul {
@@ -13,6 +24,12 @@ input, textarea {
 
 .verkefni {
   border-bottom: 1px solid gray;
+}
+
+.tag {
+  background-color: darkkhaki;
+  border-radius: 5px;
+  padding: 2px;
 }
 
 main {
@@ -45,6 +62,10 @@ main {
 .verkefnisinfo {
   display: flex;
   justify-content: space-between;
+}
+
+.valfjoldi {
+  color: darkgrey;
 }
 
 /*# sourceMappingURL=styles.css.map */

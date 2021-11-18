@@ -1,8 +1,23 @@
 @import 'variables';
 
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: $default-font-size;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  // font-family: $font-family;
 }
 
 ul {
@@ -15,4 +30,10 @@ input, textarea {
 
 .verkefni {
   border-bottom: 1px solid gray;
+}
+
+.tag {
+  background-color: darkkhaki;
+  border-radius: 5px;
+  padding: 2px;
 }

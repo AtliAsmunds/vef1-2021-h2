@@ -2,7 +2,7 @@
 
 main {
   display: grid;
-  gap: 20px;
+  gap: $gutter;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
 }
