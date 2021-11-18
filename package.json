@@ -10,7 +10,8 @@
     "sass": "sass styles.scss styles.css",
     "lint": "eslint ./**/*.js",
     "sass-watch": "sass --watch styles.scss:styles.css styles:styles",
-    "dev": "concurrently npm:sass-watch npm:browser-sync"
+    "dev": "concurrently npm:sass-watch npm:browser-sync",
+    "prettier": "prettier --write ."
   },
   "repository": {
     "type": "git",
