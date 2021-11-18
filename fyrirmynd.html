@@ -3,14 +3,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="fyrirmynd.css">
+  <script type="module" src="main.js"></script>
   <title>Verkefnalistinn</title>
 </head>
+
 <body>
   <!-- <header>
     <h1>Verkefnalistinn</h1>
   </header> -->
   <main>
-    <div class="titill"><h1>Verkefnalistinn</h1></div>
+    <div class="titill">
+      <h1>Verkefnalistinn</h1>
+    </div>
     <div class="valstika">
       <div>
         <ul>
@@ -61,7 +65,7 @@
     </div>
     <div class="verkefnin">
       <div>
-        Raða eftir: 
+        Raða eftir:
         <select>
           <option>Dagsetningu</option>
           <option>Titli</option>
@@ -95,7 +99,7 @@
             <div>Flokkur</div>
           </div>
         </li>
-      </ul>      
+      </ul>
       <div class="baetavidverkefni">
         + Bæta við verkefni
       </div>
@@ -104,22 +108,15 @@
         <form action="">
           <div>
             <label for="titill">Titill:</label>
-            <input
-            type="text"
-            name="titill"
-            id="titill"
-            placeholder="Titill á verkefni"
-            >
+            <input type="text" name="titill" id="titill" placeholder="Titill á verkefni">
           </div>
           <div>
             <label for="lysing">Lýsing:</label>
             <textarea name="lysing" id="lysing" cols="30" rows="4" placeholder="Lýsing á verkefni"></textarea>
-          </div>     
+          </div>
           <div>
             <label for="due">Lokadagsetning:</label>
-            <input type="date" id="due" name="due"
-                  value="2021-11-16"
-                  min="2021-11-16" max="2022-11-16">
+            <input type="date" id="due" name="due" value="2021-11-16" min="2021-11-16" max="2022-11-16">
           </div>
           <div>
             Val á tags og flokk
