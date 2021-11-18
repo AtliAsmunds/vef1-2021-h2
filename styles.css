@@ -15,4 +15,36 @@ input, textarea {
   border-bottom: 1px solid gray;
 }
 
+main {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.titill {
+  grid-row: 1;
+  grid-column: 2/span 2;
+}
+
+.valstika {
+  grid-row: 2;
+  grid-column: 1/span 1;
+}
+
+.valstika li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.verkefnin {
+  grid-row: 2;
+  grid-column: 2/span 1;
+}
+
+.verkefnisinfo {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=styles.css.map */
