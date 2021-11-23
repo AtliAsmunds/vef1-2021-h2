@@ -14,6 +14,10 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -22,21 +26,34 @@ input, textarea {
   width: 100%;
 }
 
-.verkefni {
-  border-bottom: 1px solid gray;
+.baetavidverkefni :nth-child(1) {
+  text-align: center;
 }
 
-.tag {
-  background-color: darkkhaki;
-  border-radius: 5px;
-  padding: 2px;
+.verkefni input {
+  margin: 8px 0;
+}
+
+.verkefni .verkefnisinfo {
+  padding: 5px;
+  border-bottom: 1px solid gray;
 }
 
 main {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.baetavidverkefni {
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.smidaverkefni {
+  grid-row: 3;
+  grid-column: 2;
 }
 
 .titill {
@@ -49,9 +66,20 @@ main {
   grid-column: 1/span 1;
 }
 
+.valstika h2 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .valstika li {
   display: flex;
   justify-content: space-between;
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .verkefnin {
@@ -59,16 +87,36 @@ main {
   grid-column: 2/span 1;
 }
 
-.verkefnisinfo {
+.verkefnisflokkun {
   display: flex;
   justify-content: space-between;
 }
 
+.verkefni {
+  display: grid;
+  grid-template-columns: 20px auto;
+}
+
+.verkefni .verkefnisinfo {
+  grid-column: 2/span 1;
+}
+
+.verkefni input {
+  grid-column: 1/span 1;
+  align-self: start;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Cambria";
+  font-style: normal;
+  src: url("./font/Cambria.ttf") format("woff");
+}
 .valfjoldi {
   color: darkgrey;
 }
 
-/* .button {
+.button {
   background-color: #cfcccc;
   color: black;
   text-align: center;
@@ -78,6 +126,7 @@ main {
 }
 
 .tag {
+  background-color: darkkhaki;
   border-radius: 5px;
   padding: 2px;
 }
@@ -86,6 +135,6 @@ main {
   border: 1px solid black;
   border-radius: 60%;
   padding: 2px 5px;
-} */
+}
 
 /*# sourceMappingURL=styles.css.map */

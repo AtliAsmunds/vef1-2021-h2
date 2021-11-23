@@ -1,5 +1,12 @@
 @import 'variables';
 
+@font-face {
+  font-display: swap;
+  font-family: 'Cambria';
+  font-style: normal;
+  src: url('./font/Cambria.ttf') format('woff');
+}
+
 .valfjoldi {
   color: darkgrey;
 }

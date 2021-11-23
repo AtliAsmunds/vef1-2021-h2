@@ -16,6 +16,10 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 :root {
   // font-family: $font-family;
 }
@@ -29,7 +33,18 @@ input, textarea {
 }
 
 .verkefni {
-  border-bottom: 1px solid gray;
+  // border-bottom: 1px solid gray;
 }
 
+.baetavidverkefni :nth-child(1) {
+  text-align: center;
+ }
 
+.verkefni input {
+  margin: 8px 0;
+}
+
+.verkefni .verkefnisinfo {
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}

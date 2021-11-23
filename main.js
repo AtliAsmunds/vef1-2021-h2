@@ -1,4 +1,8 @@
-import { fetchData } from "./lib/data.js";
+import { fetchData } from './lib/data.js';
+import { compareData } from './lib/localstorage.js';
 
-let json = fetchData();
-console.log(json);
+// Clears storage
+window.localStorage.clear();
+
+const json = fetchData();
+compareData(json);

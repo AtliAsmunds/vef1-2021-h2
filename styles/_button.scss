@@ -4,13 +4,14 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: $default-font-sizex;
+    font-size: $default-font-size;
   }
 
 .tag {
-    border-radius: 5px;
-    padding: 2px;
-  }
+  background-color: darkkhaki;
+  border-radius: 5px;
+  padding: 2px; 
+}
   
 .round {
     border: 1px solid black;
