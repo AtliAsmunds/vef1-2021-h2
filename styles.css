@@ -68,4 +68,24 @@ main {
   color: darkgrey;
 }
 
+/* .button {
+  background-color: #cfcccc;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.tag {
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.round {
+  border: 1px solid black;
+  border-radius: 60%;
+  padding: 2px 5px;
+} */
+
 /*# sourceMappingURL=styles.css.map */
