@@ -1,4 +1,4 @@
-import { fetchData } from "./lib/fetchData.js";
+import { fetchData } from "./lib/data.js";
 
 let json = fetchData();
 console.log(json);
