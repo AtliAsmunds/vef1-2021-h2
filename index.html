@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="is">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="main.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Verkefnalistinn</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="main.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Verkefnalistinn</title>
+</head>
+
+<body>
+  <div class="wrapper">
     <header>
       <h1>Verkefnalistinn</h1>
     </header>
@@ -62,6 +65,7 @@
           </ul>
         </div>
       </div>
+
       <div class="verkefnin">
         <div>
           Raða eftir:
@@ -71,45 +75,14 @@
             <option>Forgangi</option>
           </select>
         </div>
-        <ul>
-          <li class="verkefni">
-            <input type="checkbox">
-            <div>Titill á fyrsta verkefni</div>
-            <div class="verkefnisinfo">
-              <div>10 nóv.</div>
-              <div class="button tag">Tag</div>
-              <div class="button tag">Tag</div>
-              <div class="button tag">Tag</div>
-              <div class="button tag">Tag</div>
-              <div>Flokkur</div>
-            </div>
-          </li>
-          <li class="verkefni">
-            <div>Titill á miðju verkefni</div>
-            <div>Lýsing á verkefni</div>
-            <div class="verkefnisinfo">
-              <div>10 nóv.</div>
-              <div class="button tag">Tag</div>
-              <div class="button tag">Tag</div>
-              <div>Flokkur</div>
-            </div>
-          </li>
-          <li class="verkefni">
-            <div>Titill á síðasta verkefni</div>
-            <div>Lýsing á verkefni</div>
-            <div class="verkefnisinfo">
-              <div>10 nóv.</div>
-              <div class="button tag">Tag</div>
-              <div class="button tag">Tag</div>
-              <div class="button tag">Tag</div>
-              <div>Flokkur</div>
-            </div>
-          </li>
-        </ul>
+
+        
+
         <div class="baetavidverkefni">
-          <div class="button round"> + </div>
+          <button class="button round"> + </button>
           Bæta við verkefni
         </div>
+
         <div class="smidaverkefni">
           Form til þess að búa til nýtt/breyta verkefni
           <form action="">
@@ -125,12 +98,33 @@
               <label for="due">Lokadagsetning:</label>
               <input type="date" id="due" name="due" value="2021-11-16" min="2021-11-16" max="2022-11-16">
             </div>
-            <div>
-              Val á tags og flokk
+            <div class="forgang">
+              <p>Er verkefni í forgangi?</p>
+              <input type="radio" id="já" name="erForgang" value="Já">
+              <label for="já">Já</label><br>
+              <input type="radio" id="nei" name="fav_languageerForgang" value="Nei">
+              <label for="nei">Nei</label><br>
             </div>
+            <div>
+              <label for="flokkar">Flokkur:</label>
+              <select>
+                <option>Vefforrit</option>
+                <option>Skipulag</option>
+                <option>Vefþjónustur</option>
+              </select>
+            </div>
+            <div>
+              Val á tags
+            </div>
+
+            <button class="button">Vista</button>
+            <button class="button">Eyða</button>
+
           </form>
         </div>
       </div> -->
     </main>
-  </body>
+  </div>
+</body>
+
 </html>

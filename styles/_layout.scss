@@ -28,7 +28,7 @@ main {
 }
 .valstika h2{
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
   margin-left: 0;
   margin-right: 0;
 }
@@ -66,4 +66,9 @@ main {
   grid-column: 1 / span 1;
   // grid-row: 1 / span 1;
   align-self: start;
+}
+
+.taggar{
+  display: flex;
+  align-content: flex-start;
 }

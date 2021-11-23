@@ -26,6 +26,11 @@ input, textarea {
   width: 100%;
 }
 
+label {
+  display: inline-block;
+  margin: 8px 0 4px 0;
+}
+
 .baetavidverkefni :nth-child(1) {
   text-align: center;
 }
@@ -68,7 +73,7 @@ main {
 
 .valstika h2 {
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.25em;
   margin-left: 0;
   margin-right: 0;
 }
@@ -106,6 +111,11 @@ main {
   align-self: start;
 }
 
+.taggar {
+  display: flex;
+  align-content: flex-start;
+}
+
 @font-face {
   font-display: swap;
   font-family: "Cambria";
@@ -117,12 +127,13 @@ main {
 }
 
 .button {
-  background-color: #cfcccc;
+  background-color: #c5c5c5;
   color: black;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  margin: 10px 0 0 0;
 }
 
 .tag {

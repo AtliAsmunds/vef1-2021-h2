@@ -1,8 +1,8 @@
 import { fetchData } from './lib/data.js';
-import { compareData } from './lib/localstorage.js';
+import { syncData } from './lib/localstorage.js';
 
 // Clears storage
-window.localStorage.clear();
+// window.localStorage.clear();
 
-const json = fetchData();
-compareData(json);
+const json = await fetchData();
+syncData(json);

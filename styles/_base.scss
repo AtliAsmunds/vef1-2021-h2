@@ -8,9 +8,7 @@
 html {
   box-sizing: border-box;
   font-size: $default-font-size;
-}
-
-*,
+}*,
 *::before,
 *::after {
   box-sizing: inherit;
@@ -32,6 +30,11 @@ input, textarea {
   width: 100%;
 }
 
+label {
+  display: inline-block;
+  margin: 8px 0 4px 0;
+}
+
 .verkefni {
   // border-bottom: 1px solid gray;
 }
@@ -48,3 +51,6 @@ input, textarea {
   padding: 5px;
   border-bottom: 1px solid gray;
 }
+
+// wr.apper{r {
+//   max-width: $max-size-screen;
