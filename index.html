@@ -9,6 +9,15 @@
     <title>Verkefnalistinn</title>
   </head>
 
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="main.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Verkefnalistinn</title>
+  </head>
+
   <body>
     <div class="wrapper">
       <header>
@@ -16,112 +25,129 @@
       </header>
       <main>
         <a href="fyrirmynd.html">fyrirmynd</a>
-        <!-- <div class="valstika">
-        <div>
-          <ul>
-            <li>
-              <div>Verkefni</div>
-              <div class="valfjoldi Verkefni"></div>
-            </li>
-            <li>
-              <div>Kláruð verkefni</div>
-              <div class="valfjoldi kláruðVerkefni"></div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>Flokkar</h2>
-          <ul>
-            <li>
-              <div>Vefforrit</div>
-              <div class="valfjoldi vefforrit"></div>
-            </li>
-            <li>
-              <div>Skipulag</div>
-              <div class="valfjoldi skipulag"></div>
-            </li>
-            <li>
-              <div>Vefþjónustur</div>
-              <div class="valfjoldi vefþjónustur"></div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2>Tags</h2>
-          <ul>
-            <li>
-              <div>Vefforrit</div>
-              <div class="valfjoldi vefforrit"></div>
-            </li>
-            <li>
-              <div>Skipulag</div>
-              <div class="valfjoldi skipulag"></div>
-            </li>
-            <li>
-              <div>Vefþjónustur</div>
-              <div class="valfjoldi vefþjónustur"></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      
-      <div class="taskList">
-        <div>
-          Raða eftir:
-          <select>
-            <option>Dagsetningu</option>
-            <option>Titli</option>
-            <option>Forgangi</option>
-          </select>
+        <div class="valstika">
+          <div>
+            <ul>
+              <li>
+                <div>Verkefni</div>
+                <div class="valfjoldi Verkefni"></div>
+              </li>
+              <li>
+                <div>Kláruð verkefni</div>
+                <div class="valfjoldi kláruðVerkefni"></div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Flokkar</h2>
+            <ul>
+              <li>
+                <div>Vefforrit</div>
+                <div class="valfjoldi vefforrit"></div>
+              </li>
+              <li>
+                <div>Skipulag</div>
+                <div class="valfjoldi skipulag"></div>
+              </li>
+              <li>
+                <div>Vefþjónustur</div>
+                <div class="valfjoldi vefþjónustur"></div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>Tags</h2>
+            <ul>
+              <li>
+                <div>Vefforrit</div>
+                <div class="valfjoldi vefforrit"></div>
+              </li>
+              <li>
+                <div>Skipulag</div>
+                <div class="valfjoldi skipulag"></div>
+              </li>
+              <li>
+                <div>Vefþjónustur</div>
+                <div class="valfjoldi vefþjónustur"></div>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="baetavidverkefni">
-          <button class="button round"> + </button>
-          Bæta við verkefni
+        <div class="taskList">
+          <div>
+            Raða eftir:
+            <select>
+              <option>Dagsetningu</option>
+              <option>Titli</option>
+              <option>Forgangi</option>
+            </select>
+          </div>
+
+          <div class="baetavidverkefni">
+            <button class="button round">+</button>
+            Bæta við verkefni
+          </div>
         </div>
-      </div>
 
-      <div class="createChange">
-        <div class="smidaverkefni">
-          Form til þess að búa til nýtt/breyta verkefni
-          <form id="nyttVerkefni">
-            <div>
-              <label for="titill">Titill:</label>
-              <input type="text" name="titill" id="titill" placeholder="Titill á verkefni">
-            </div>
-            <div>
-              <label for="lysing">Lýsing:</label>
-              <textarea name="lysing" id="lysing" cols="30" rows="4" placeholder="Lýsing á verkefni"></textarea>
-            </div>
-            <div>
-              <label for="due">Lokadagsetning:</label>
-              <input type="date" id="due" name="due" value="2021-11-16" min="2021-11-16" max="2022-11-16">
-            </div>
-            <div class="forgang">
-              <p>Er verkefni í forgangi?</p>
-              <input type="radio" id="já" name="erForgang" value="Já">
-              <label for="já">Já</label><br>
-              <input type="radio" id="nei" name="erForgang" value="Nei">
-              <label for="nei">Nei</label><br>
-            </div>
-            <div>
-              <label for="flokkar">Flokkur:</label>
-              <select>
-                <option>Vefforrit</option>
-                <option>Skipulag</option>
-                <option>Vefþjónustur</option>
-              </select>
-            </div>
-            <div>
-              Val á tags
-            </div>
+        <div class="createChange">
+          <div class="smidaverkefni">
+            Form til þess að búa til nýtt/breyta verkefni
+            <form id="nyttVerkefni">
+              <div>
+                <label for="titill">Titill:</label>
+                <input
+                  type="text"
+                  name="titill"
+                  id="titill"
+                  placeholder="Titill á verkefni"
+                />
+              </div>
+              <div>
+                <label for="lysing">Lýsing:</label>
+                <textarea
+                  name="lysing"
+                  id="lysing"
+                  cols="30"
+                  rows="4"
+                  placeholder="Lýsing á verkefni"
+                ></textarea>
+              </div>
+              <div>
+                <label for="due">Lokadagsetning:</label>
+                <input
+                  type="date"
+                  id="due"
+                  name="due"
+                  value="2021-11-16"
+                  min="2021-11-16"
+                  max="2022-11-16"
+                />
+              </div>
+              <div class="forgang">
+                <p>Er verkefni í forgangi?</p>
+                <input type="radio" id="já" name="erForgang" value="Já" />
+                <label for="já">Já</label><br />
+                <input type="radio" id="nei" name="erForgang" value="Nei" />
+                <label for="nei">Nei</label><br />
+              </div>
+              <div>
+                <label for="flokkar">Flokkur:</label>
+                <select>
+                  <option>Vefforrit</option>
+                  <option>Skipulag</option>
+                  <option>Vefþjónustur</option>
+                </select>
+              </div>
+              <div>Val á tags</div>
 
-            <button class="button confirm" type="submit">Vista</button>
-            <button class="button delete" id="deleteButton">Eyða</button>
-
-          </form>
+              <div class="comfirmDelete_buttons">
+                <button class="button confirm" type="submit">Vista</button>
+                <button class="button delete" id="deleteButton">Eyða</button>
+              </div>
+            </form>
+          </div>
         </div>
-      </div> -->
       </main>
     </div>
   </body>
