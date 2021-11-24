@@ -31,6 +31,11 @@ label {
   margin: 8px 0 4px 0;
 }
 
+/*
+.verkefni {
+  // border-bottom: 1px solid gray;
+}
+*/
 .baetavidverkefni :nth-child(1) {
   text-align: center;
 }
@@ -114,6 +119,11 @@ main {
 .taggar {
   display: flex;
   align-content: flex-start;
+}
+
+.wrapper {
+  max-width: 1050px;
+  margin: auto;
 }
 
 @font-face {
