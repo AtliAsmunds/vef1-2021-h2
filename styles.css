@@ -132,6 +132,10 @@ header {
   grid-template-rows: auto auto auto;
 }
 
+.createChange {
+  grid-column: 2/span 1;
+}
+
 @font-face {
   font-display: swap;
   font-family: "Cambria";
