@@ -1,6 +1,7 @@
 @import "variables";
 
 main {
+  grid-column: span 3;
   display: grid;
   gap: $gutter;
   grid-template-columns: repeat(3, 1fr);
@@ -13,17 +14,17 @@ main {
 }
 
 .smidaverkefni {
-  grid-row: 3;
+  grid-row: 2;
   grid-column: 2;
 }
 
-.titill {
+header {
   grid-row: 1;
   grid-column: 2 / span 2;
 }
 
 .valstika {
-  grid-row: 2;
+  grid-row: 1;
   grid-column: 1 / span 1;
 }
 .valstika h2 {
@@ -42,7 +43,7 @@ main {
 }
 
 .verkefnin {
-  grid-row: 2;
+  grid-row: 1;
   grid-column: 2 / span 1;
 }
 
@@ -71,8 +72,13 @@ main {
 .taggar {
   display: flex;
   align-content: flex-start;
+  width: 12em;
 }
 .wrapper {
   max-width: $max-size-screen;
   margin: auto;
+  display: grid;
+  gap: $gutter;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
 }
