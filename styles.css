@@ -136,6 +136,29 @@ header {
   grid-column: 2/span 1;
 }
 
+.forgang {
+  display: grid;
+  gap: 0;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1em 1em 1em;
+}
+
+.forgang p {
+  grid-column: 1/span 4;
+  grid-row: 1;
+}
+
+.forgang input {
+  width: 1em;
+  grid-column: 1;
+  margin-left: 1.5em;
+}
+
+.forgang label {
+  margin: 0;
+  grid-column: 2;
+}
+
 @font-face {
   font-display: swap;
   font-family: "Cambria";
