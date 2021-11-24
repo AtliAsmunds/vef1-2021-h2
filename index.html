@@ -65,8 +65,8 @@
           </ul>
         </div>
       </div>
-
-      <div class="verkefnin">
+      
+      <div class="taskList">
         <div>
           Raða eftir:
           <select>
@@ -76,16 +76,16 @@
           </select>
         </div>
 
-        
-
         <div class="baetavidverkefni">
           <button class="button round"> + </button>
           Bæta við verkefni
         </div>
+      </div>
 
+      <div class="createChange">
         <div class="smidaverkefni">
           Form til þess að búa til nýtt/breyta verkefni
-          <form action="">
+          <form id="nyttVerkefni">
             <div>
               <label for="titill">Titill:</label>
               <input type="text" name="titill" id="titill" placeholder="Titill á verkefni">
@@ -102,7 +102,7 @@
               <p>Er verkefni í forgangi?</p>
               <input type="radio" id="já" name="erForgang" value="Já">
               <label for="já">Já</label><br>
-              <input type="radio" id="nei" name="fav_languageerForgang" value="Nei">
+              <input type="radio" id="nei" name="erForgang" value="Nei">
               <label for="nei">Nei</label><br>
             </div>
             <div>
@@ -117,8 +117,8 @@
               Val á tags
             </div>
 
-            <button class="button">Vista</button>
-            <button class="button">Eyða</button>
+            <button class="button confirm" type="submit">Vista</button>
+            <button class="button delete" id="deleteButton">Eyða</button>
 
           </form>
         </div>
