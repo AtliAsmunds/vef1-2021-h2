@@ -13,6 +13,7 @@ module.exports = {
     'no-param-reassign': 0,
     'import/prefer-default-export': 0,
     'guard-for-in': 0,
+    'no-plusplus': 0,
     quotes: ['error', 'single'],
     'no-console': [
       'warn',
