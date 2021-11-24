@@ -13,7 +13,7 @@ async function main() {
   syncData(json);
   
   // Render the page into <main>
-  // fetchAndRenderPage(mainEl);
+  fetchAndRenderPage(mainEl);
 }
 
 main();
