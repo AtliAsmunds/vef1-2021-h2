@@ -15,9 +15,7 @@
         <h1>Verkefnalistinn</h1>
       </header>
       <main>
-        <a href="fyrirmynd.html" style="grid-column: 3; grid-row: 2"
-          >fyrirmynd</a
-        >
+        <!-- <a href="fyrirmynd.html" style="grid-column: 3; grid-row: 2">fyrirmynd</a> -->
         <div class="valstika">
           <div>
             <ul>
@@ -34,35 +32,13 @@
           <div>
             <h2>Flokkar</h2>
             <ul class="flokkarListi">
-              <!-- <li>
-              <div>Vefforrit</div>
-              <div class="valfjoldi vefforrit"></div>
-            </li>
-            <li>
-              <div>Skipulag</div>
-              <div class="valfjoldi skipulag"></div>
-            </li>
-            <li>
-              <div>Vefþjónustur</div>
-              <div class="valfjoldi vefþjónustur"></div>
-            </li> -->
+      
             </ul>
           </div>
           <div>
             <h2>Tags</h2>
             <ul class="tagListi">
-              <!-- <li>
-              <div>Vefforrit</div>
-              <div class="valfjoldi vefforrit"></div>
-            </li>
-            <li>
-              <div>Skipulag</div>
-              <div class="valfjoldi skipulag"></div>
-            </li>
-            <li>
-              <div>Vefþjónustur</div>
-              <div class="valfjoldi vefþjónustur"></div>
-            </li> -->
+
             </ul>
           </div>
         </div>
@@ -138,14 +114,22 @@
               </div>
               <div>
                 <label for="flokkar">Flokkur:</label>
-                <select>
+                <select class="flokkarOptions">
                   <option>Vefforrit</option>
                   <option>Skipulag</option>
                   <option>Vefþjónustur</option>
                 </select>
               </div>
-              <div>Val á tags</div>
-
+              <div>
+                <label for="tags">Tags:</label>
+                <textarea name="tags" id="tags" cols="30" rows="4"
+                  placeholder="Listi af töggum með bili á milli">TagA TagB</textarea>
+              </div>
+              <div>
+                <label for="tags">Tags:</label>
+                <textarea name="tags" id="tags" cols="30" rows="4"
+                  placeholder="Listi af töggum með bili á milli">TagA TagB</textarea>
+              </div>
               <div class="comfirmDelete_buttons">
                 <button class="button confirm" type="submit">Vista</button>
                 <button class="button delete" id="deleteButton">Eyða</button>
