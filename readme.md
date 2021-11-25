@@ -1,5 +1,8 @@
 # Planið
 
+## TODO
+Sumt í forminu á að vera required
+
 ## Hvað þarf að gera
 * Ákveða útlit og media query með SCSS
 * Ákveða HTML uppsetningu
