@@ -77,10 +77,10 @@
             </select>
           </div>
           <div class="verkefnalisti"></div>
-          <div class="baetavidverkefni">
+          <a href="" class="baetavidverkefni">
             <button class="button round">+</button>
             Bæta við verkefni
-          </div>
+          </a>
         </div>
 
         <div class="createChange">
@@ -116,6 +116,8 @@
                   min="2021-11-16"
                   max="2022-11-16"
                 />
+                <label for="appt">Lokatími:</label>
+                <input type="time" id="dueTime" name="dueTime" />
               </div>
               <div class="forgang">
                 <p>Er verkefni í forgangi?</p>
@@ -135,6 +137,9 @@
               <div class="comfirmDelete_buttons">
                 <button class="button confirm" type="submit">Vista</button>
                 <button class="button delete" id="deleteButton">Eyða</button>
+                <button class="button cancel" id="cancelButton">
+                  Hætta við
+                </button>
               </div>
             </form>
           </div>

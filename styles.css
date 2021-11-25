@@ -49,6 +49,10 @@ label {
   border-bottom: 1px solid gray;
 }
 
+.hidden {
+  display: none;
+}
+
 main {
   grid-column: span 3;
   display: grid;
