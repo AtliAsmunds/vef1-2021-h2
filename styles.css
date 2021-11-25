@@ -105,20 +105,25 @@ header {
 .verkefnisflokkun {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .verkefni {
   display: grid;
-  grid-template-columns: 20px auto;
 }
 
 .verkefni .verkefnisinfo {
-  grid-column: 2/span 1;
+  display: inline-block;
 }
 
 .verkefni input {
-  grid-column: 1/span 1;
-  align-self: start;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin: 0;
+  vertical-align: bottom;
+  position: relative;
+  top: -1px;
 }
 
 .taggar {
