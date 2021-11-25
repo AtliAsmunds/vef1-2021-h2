@@ -46,10 +46,10 @@
         <div class="taskList">
           <div>
             Raða eftir:
-            <select>
-              <option>Dagsetningu</option>
-              <option>Titli</option>
-              <option>Forgangi</option>
+            <select class="sorting" name="sorting">
+              <option value="due">Dagsetningu</option>
+              <option value="title">Titli</option>
+              <option value="priority">Forgangi</option>
             </select>
           </div>
           <div class="verkefnalisti"></div>
@@ -97,19 +97,39 @@
               </div>
               <div class="forgang">
                 <p>Er verkefni í forgangi?</p>
-                <label><input id="jaForgang" type="radio" name="erForgang" />Já</label>
-                <label><input id="neiForgang" type="radio" name="erForgang" />Nei</label>
+                <label
+                  ><input
+                    id="jaForgang"
+                    type="radio"
+                    name="erForgang"
+                  />Já</label
+                >
+                <label
+                  ><input
+                    id="neiForgang"
+                    type="radio"
+                    name="erForgang"
+                  />Nei</label
+                >
               </div>
               <div>
                 <label for="flokkar">Flokkur:</label>
-                <select>
+                <select class="flokkarOptions">
                   <option>Vefforrit</option>
                   <option>Skipulag</option>
                   <option>Vefþjónustur</option>
                 </select>
               </div>
-              <div>Val á tags</div>
-
+              <div>
+                <label for="tags">Tags:</label>
+                <textarea name="tags" id="tags" cols="30" rows="4"
+                  placeholder="Listi af töggum með bili á milli">TagA TagB</textarea>
+              </div>
+              <div>
+                <label for="tags">Tags:</label>
+                <textarea name="tags" id="tags" cols="30" rows="4"
+                  placeholder="Listi af töggum með bili á milli">TagA TagB</textarea>
+              </div>
               <div class="comfirmDelete_buttons">
                 <button class="button confirm" type="submit">Vista</button>
                 <button class="button delete" id="deleteButton">Eyða</button>
