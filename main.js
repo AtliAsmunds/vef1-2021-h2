@@ -11,7 +11,7 @@ const mainEl = document.querySelector('main');
 async function main() {
   const json = await fetchData();
   syncData(json);
-  console.log(fetchTask(98));
+  // console.log(fetchTask(98));
 
   // Render the page into <main>
   fetchAndRenderPage(mainEl);
