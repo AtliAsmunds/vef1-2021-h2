@@ -72,7 +72,11 @@ header {
 .taggar {
   display: flex;
   align-content: flex-start;
-  width: 12em;
+  max-width: 11em;
+}
+.tag {
+  margin-left: 1px;
+  margin-right: 1px;
 }
 .wrapper {
   max-width: $max-size-screen;
