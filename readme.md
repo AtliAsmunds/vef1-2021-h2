@@ -2,6 +2,7 @@
 
 ## TODO
 Sumt í forminu á að vera required
+Ef task er breytt án þess að breyta tags þá kemur auka tómur tag
 
 ## Hvað þarf að gera
 * Ákveða útlit og media query með SCSS
