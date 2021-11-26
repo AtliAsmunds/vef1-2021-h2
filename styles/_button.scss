@@ -4,18 +4,41 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    padding: 0.4rem;
     font-size: $default-font-size;
-    margin: 10px 0 0 0;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
   }
 
 .tag {
   background-color: darkkhaki;
   border-radius: 5px;
-  padding: 2px; 
+  padding: 0.4rem; 
 }
   
 .round {
     border: 1px solid black;
     border-radius: 60%;
-    padding: 2px 5px;
+    width: 25px;
+    height: 25px;
+    line-height: 4px;
+}
+
+.menu-item,
+.verkefnistitill,
+.checkbox,
+.baetavidverkefni {
+  cursor: pointer;
+}
+
+.checkbox {
+  border-radius: 50px;
+}
+
+.menu-item {
+  transition: background ease-in-out 200ms;
+
+  &:hover {
+    background: rgba(131, 131, 131, 0.233);
+  }
 }
