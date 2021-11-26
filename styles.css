@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +10,7 @@
 
 html {
   box-sizing: border-box;
+  font-family: "Arvo";
   font-size: 16px;
 }
 
@@ -22,7 +28,7 @@ ul {
   list-style: none;
 }
 
-input, textarea {
+.createChange input, textarea {
   width: 100%;
 }
 
@@ -41,7 +47,7 @@ label {
 }
 
 .verkefni input {
-  margin: 8px 0;
+  margin-top: 4px;
 }
 
 .verkefni .verkefnisinfo {
@@ -53,136 +59,102 @@ label {
   display: none;
 }
 
-main {
-  grid-column: span 3;
+.wrapper {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto;
-}
-
-.baetavidverkefni {
-  grid-template-columns: 20px auto;
-}
-
-.smidaverkefni {
-  grid-row: 2;
-  grid-column: 2;
+  max-width: 1050px;
+  margin: 4rem auto;
 }
 
 header {
-  grid-row: 1;
   grid-column: 2/span 2;
 }
 
+main {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .valstika {
-  grid-row: 1;
-  grid-column: 1/span 1;
+  grid-column: span 1;
+  display: flex;
+  flex-direction: column;
+}
+.valstika > div {
+  margin-bottom: 2rem;
 }
 
-.valstika h2 {
-  margin-top: 0.5em;
-  margin-bottom: 0.25em;
-  margin-left: 0;
-  margin-right: 0;
+.sorting-container {
+  margin-bottom: 2rem;
 }
 
-.valstika li {
+.menu-item {
   display: flex;
   justify-content: space-between;
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
-  margin-left: 0;
-  margin-right: 0;
+  margin-bottom: 0.5rem;
 }
 
-.verkefnin {
-  grid-row: 1;
-  grid-column: 2/span 1;
+.content {
+  grid-column: 2/span 2;
+  width: 100%;
+}
+
+.verkefnalisti {
+  display: flex;
+  flex-direction: column;
+}
+
+.verkefni {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.verkefni input {
+  align-self: flex-start;
+  width: 3%;
+}
+
+.verkefni-container {
+  display: flex;
+  width: 95%;
+  flex-direction: column;
 }
 
 .verkefnisflokkun {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-}
-
-.verkefni {
-  display: grid;
-}
-
-.verkefni .verkefnisinfo {
-  display: inline-block;
-}
-
-.verkefni input {
-  width: 15px;
-  height: 15px;
-  padding: 0;
-  margin: 0;
-  vertical-align: bottom;
-  position: relative;
-  top: -1px;
 }
 
 .taggar {
-  display: flex;
-  align-content: flex-start;
-  max-width: 11em;
+  flex: 1;
+}
+.taggar .tag {
+  margin: 0 0.5rem;
 }
 
-.tag {
-  margin-left: 1px;
-  margin-right: 1px;
+.taskCategory {
+  align-self: end;
 }
 
-.wrapper {
-  max-width: 1050px;
-  margin: auto;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto auto;
-}
-
-.createChange {
-  grid-column: 2/span 1;
-}
-
-.forgang {
-  display: grid;
-  gap: 0;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1em 1em 1em;
-}
-
-.forgang p {
-  grid-column: 1/span 4;
-  grid-row: 1;
-}
-
-.forgang input {
-  width: 1em;
-}
-
-.forgang label {
-  margin: 0;
-  grid-column: 1;
-}
-
-.taskList {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Cambria";
-  font-style: normal;
-  src: url("./font/Cambria.ttf") format("woff");
-}
 .valfjoldi {
   color: darkgrey;
+}
+
+.verkefnistitill {
+  margin-bottom: 1rem;
+}
+
+.verkefnislysing {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-size: 1.2rem;
 }
 
 .button {
@@ -191,20 +163,42 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  padding: 0.4rem;
   font-size: 16px;
-  margin: 10px 0 0 0;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
 }
 
 .tag {
   background-color: darkkhaki;
   border-radius: 5px;
-  padding: 2px;
+  padding: 0.4rem;
 }
 
 .round {
   border: 1px solid black;
   border-radius: 60%;
-  padding: 2px 5px;
+  width: 25px;
+  height: 25px;
+  line-height: 4px;
+}
+
+.menu-item,
+.verkefnistitill,
+.checkbox,
+.baetavidverkefni {
+  cursor: pointer;
+}
+
+.checkbox {
+  border-radius: 50px;
+}
+
+.menu-item {
+  transition: background ease-in-out 200ms;
+}
+.menu-item:hover {
+  background: rgba(131, 131, 131, 0.233);
 }
 
 /*# sourceMappingURL=styles.css.map */
