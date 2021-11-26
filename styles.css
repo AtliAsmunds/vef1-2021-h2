@@ -55,6 +55,10 @@ label {
   display: none;
 }
 
+.taggar {
+  text-align: center;
+}
+
 .wrapper {
   display: grid;
   gap: 20px;
@@ -123,6 +127,7 @@ main {
 .verkefnisflokkun {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .taggar {
@@ -130,10 +135,6 @@ main {
 }
 .taggar .tag {
   margin: 0 0.1rem;
-}
-
-.task-category {
-  align-self: end;
 }
 
 .valfjoldi {
@@ -166,7 +167,7 @@ label {
 }
 
 .tag {
-  background-color: #dad590;
+  background-color: #dbd9ba;
   border-radius: 5px;
   padding: 0.4rem;
 }
@@ -196,3 +197,5 @@ label {
 .menu-item:hover {
   background: #a7a7a7;
 }
+
+/*# sourceMappingURL=styles.css.map */

@@ -70,6 +70,7 @@ main {
 .verkefnisflokkun {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .taggar {
@@ -81,5 +82,5 @@ main {
 }
 
 .task-category {
-  align-self: end;
+  // align-self: end;
 }
