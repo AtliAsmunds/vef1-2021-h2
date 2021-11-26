@@ -13,8 +13,8 @@
     "dev": "concurrently npm:sass-watch npm:browser-sync",
     "prettier": "prettier --write .",
     "build:sass": "sass --no-source-map styles:styles styles.scss:styles.css",
-    "build-win:copy": "mkdir -p build\\ && cp -r *.html *.css *.js lib\\ build\\",
-    "build-unix:copy": "mkdir -p build/ && cp -r *.html *.css *.js lib/ build/",
+    "build-win:copy": "mkdir build\\ && cp -r *.html *.css *.js lib\\ font\\ build\\",
+    "build-unix:copy": "mkdir -p build/ && cp -r *.html *.css *.js lib/ font/ build/",
     "build-win": "npm run build:sass && npm run build-win:copy",
     "build-unix": "npm run build:sass && npm run build-unix:copy"
   },
