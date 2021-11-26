@@ -3,7 +3,7 @@ import { syncData } from './lib/localstorage.js';
 import { fetchAndRenderPage } from './lib/ui.js';
 
 // Clears storage
-window.localStorage.clear();
+// window.localStorage.clear();
 
 async function main() {
   const json = await fetchData();
