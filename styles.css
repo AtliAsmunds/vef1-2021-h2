@@ -55,10 +55,6 @@ label {
   display: none;
 }
 
-.taggar {
-  text-align: center;
-}
-
 .wrapper {
   display: grid;
   gap: 20px;
@@ -127,14 +123,18 @@ main {
 .verkefnisflokkun {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .taggar {
   flex: 1;
+  margin-left: 1rem;
 }
 .taggar .tag {
   margin: 0 0.1rem;
+}
+
+.task-category {
+  align-self: end;
 }
 
 .valfjoldi {
@@ -185,6 +185,10 @@ label {
 .checkbox,
 .baetavidverkefni {
   cursor: pointer;
+}
+
+.menu-item-selected {
+  background-color: darkgrey;
 }
 
 .checkbox {
