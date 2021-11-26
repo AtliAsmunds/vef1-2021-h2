@@ -3,6 +3,8 @@
 Til þess að setja upp tól er skpunin `npm install` keyrð.
 Skrár sem notaðar eru í þróun eru ekki settar inn í git heldur eru skrárnar geymdar í `.gitignore`.
 
+[Verkefnið á Netlify](https://flamboyant-heisenberg-ad356b.netlify.app/)
+
 ## Þróun (_development_)
 
 Þróunarumhverfi er gangsett með skipuninni `npm run dev` sem þýðir SASS skrár yfir í CSS og kveikir á browser-sync sem fylgist með html skrám og þýddri CSS skrá. Skipunin `npm run lint-scss` keyrir svo stylelint á SASS skrárnar sem fer yfir hvort kóðinn sé rétt settur upp eftir grunn staðli. Einnig er til staðar skipunin `npm run lint` sem keyrir eslint á allar JavaScript skrár og athugar uppsetningu.
