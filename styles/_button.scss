@@ -1,27 +1,27 @@
 .button {
-    background-color: #c5c5c5;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0.4rem;
-    font-size: $default-font-size;
-    margin-right: 0.5rem;
-    margin-top: 1rem;
-  }
+  background-color: $button-color;
+  color: #000;
+  display: inline-block;
+  font-size: $default-font-size;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+}
 
 .tag {
-  background-color: darkkhaki;
+  background-color: $tag-color;
   border-radius: 5px;
-  padding: 0.4rem; 
+  padding: 0.4rem;
 }
-  
+
 .round {
-    border: 1px solid black;
-    border-radius: 60%;
-    width: 25px;
-    height: 25px;
-    line-height: 4px;
+  border: 1px solid #000;
+  border-radius: 60%;
+  height: 25px;
+  line-height: 4px;
+  width: 25px;
 }
 
 .menu-item,
@@ -39,6 +39,6 @@
   transition: background ease-in-out 200ms;
 
   &:hover {
-    background: rgba(131, 131, 131, 0.233);
+    background: $hover-menu;
   }
 }

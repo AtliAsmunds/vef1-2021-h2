@@ -11,7 +11,12 @@
     "lint": "eslint ./**/*.js",
     "sass-watch": "sass --watch styles.scss:styles.css styles:styles",
     "dev": "concurrently npm:sass-watch npm:browser-sync",
-    "prettier": "prettier --write ."
+    "prettier": "prettier --write .",
+    "build:sass": "sass --no-source-map styles:styles styles.scss:styles.css",
+    "build-win:copy": "mkdir -p build\\ && cp -r *.html *.css *.js lib\\ build\\",
+    "build-unix:copy": "mkdir -p build/ && cp -r *.html *.css *.js lib/ build/",
+    "build-win": "npm run build:sass && npm run build-win:copy",
+    "build-unix": "npm run build:sass && npm run build-unix:copy"
   },
   "repository": {
     "type": "git",
